@@ -1,0 +1,8 @@
+services:
+  specify-iiif-manifest:
+    build: .
+    image: specify-iiif-manifest:latest
+    volumes:
+      - ./data:/app/data
+      - ./log:/app/log
+      - ./manifests:/app/manifests

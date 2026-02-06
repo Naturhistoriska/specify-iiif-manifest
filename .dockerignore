@@ -1,0 +1,27 @@
+# Ignore .git directory
+.git
+
+# Ignore virtual environment
+.venv/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore log files
+*.log
+
+# Ignore IDE files
+.idea/
+
+# Ignore generated manifests
+manifests/
+
+# Ignore Dockerfile itself
+Dockerfile
+
+# Ignore README.md
+README.md
+
+/data
+
