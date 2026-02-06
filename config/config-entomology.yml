@@ -1,0 +1,39 @@
+image_service_base_url: "https://assets.nrm.se/iiif/3/"
+default_language: "en"
+image_url_regex: "(https?://assets\\.nrm\\.se/iiif/3/[^/]+).*"
+image_url_replacement: "\\1/info.json"
+manifest_dir: "manifests"
+error_log_file: "log/error-entomology.log"
+occurrence_csv: "data/entomology/occurrence.txt"
+media_image_csv: "data/entomology/media_image.txt"
+media_iiif_csv: "data/entomology/media_iiif.txt"
+separator: "\t"
+metadata_keys:
+  - catalogNumber
+  - scientificName
+  - typeStatus
+  - class
+  - order
+  - family
+  - country
+
+manifest:
+  rights: "https://creativecommons.org/licenses/by/4.0/legalcode"
+  requiredStatement:
+    label:
+      en:
+        - "Attribution"
+    value:
+      en:
+        - "Swedish Museum of Natural History"
+      sv:
+        - "Naturhistoriska riksmuseet"
+  provider:
+    - id: "https://www.nrm.se/"
+      label:
+        en: ["Swedish Museum of Natural History"]
+        sv: ["Naturhistoriska riksmuseet"]
+      logo:
+        - id: "https://vega.nrm.se/images/18.1e0413d1886fc6a95a8d/1685522636129/nrm-logo-staende-svensk-fullfarg.jpg"
+          type: "Image"
+          format: "image/jpeg"
